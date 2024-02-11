@@ -823,5 +823,20 @@
 "average_speed": 2.959,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 10731494132,
+"name": "\u5348\u540e\u884c\u8d70",
+"distance": 352.6,
+"moving_time": "0:06:56",
+"type": "Hike",
+"start_date": "2024-02-10 08:07:15+00:00",
+"start_date_local": "2024-02-10 16:07:15",
+"location_country": "Singapore",
+"summary_polyline": "{}uoFa`lxTGBBDD@DA@GCIGHB@@CABE?@MDBV?AJB@BA?GCACD?GFAB@@DAp@A@IG@IBH@A@EECE@?N]C@IH@GB@@D?@CAGI??OBCF??JA@EGAFLD@LH?@C@GGAC@DDI?@KV?@ICGG?A@?FDCB?AHC@GC@[M?AB@FD@BCECBAF@CHKCANH??IBA?HMDEOID?D",
+"average_heartrate": 102.0,
+"average_speed": 0.847,
+"source": "strava",
+"streak": 1
 }
 ]
