@@ -883,5 +883,20 @@
 "average_speed": 2.098,
 "source": "strava",
 "streak": 2
+},
+{
+"run_id": 10823761098,
+"name": "\u7a7a\u8179\u6709\u6c27",
+"distance": 3071.1,
+"moving_time": "0:18:02",
+"type": "Run",
+"start_date": "2024-02-24 02:08:57+00:00",
+"start_date_local": "2024-02-24 10:08:57",
+"location_country": "Singapore",
+"summary_polyline": "eqxyDiyhzRTBrAA`@EH?l@a@h@c@`@MfAMl@SVCRGd@DH@Z^Jn@JZPx@JXJh@NP\\T`@Fr@Gd@MPB\\IJDL?N_@TULI|@]F?NCP?HAJDF?\\Eh@APEp@BTEJDDEF?PQD?DG^ULONENOHCR?RIHBP[A]Sq@?Gf@q@FUHc@EIEAE@CVp@HUMAEF?BEAQH}@PaAR{@D_AH]TaB?[HwAE_@CBE?SSS?YOg@EGCO@KIW?[Hk@\\OD[Bu@TW@q@GO@MFa@FEAGLWF[L[B[Hc@@WDm@To@b@CAODm@DGBEHOAi@HMDQEU?KEk@KGACG_@IKEU@WKG?gDc@U?SXOCOBg@G]BOEeAEKRATGTQN@VBHCX?b@@FCDBD?ZBLQ^?h@IfAF^?JGnABJCR@v@Ah@EV?b@ALBJENAXEXBTIb@A`@CX@PE|A@REVEhACNAb@BFIDOX?RENBLKb@BL^j@l@^\\VJJB?@GGKYMYS[K",
+"average_heartrate": 141.6,
+"average_speed": 2.838,
+"source": "strava",
+"streak": 1
 }
 ]
