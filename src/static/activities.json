@@ -958,5 +958,35 @@
 "average_speed": 6.637,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 10878218170,
+"name": "\u5348\u95f4\u8dd1\u6b65",
+"distance": 1607.7,
+"moving_time": "0:09:07",
+"type": "Run",
+"start_date": "2024-03-03 04:37:54+00:00",
+"start_date_local": "2024-03-03 12:37:54",
+"location_country": "Singapore",
+"summary_polyline": "wmxyDo_hzREAF?f@r@Vz@JTNd@VvAT~Av@lG\\jAV^XZh@dA\\^n@^\\FV?NB^Vb@PT@NAJ?|@Nv@INEf@Kz@@l@GTJP?PFJ?NFN?AK@BBAHIFCh@FPAFQLI^KdCUZAf@I`@CtBw@|CkBrA_Az@wAHEVEJ?|@Rv@Gx@ArADnBd@h@VTP",
+"average_heartrate": 149.7,
+"average_speed": 2.939,
+"source": "strava",
+"streak": 2
+},
+{
+"run_id": 10878235948,
+"name": "\u5348\u95f4\u8dd1\u6b65",
+"distance": 1062.7,
+"moving_time": "0:06:45",
+"type": "Run",
+"start_date": "2024-03-03 04:51:49+00:00",
+"start_date_local": "2024-03-03 12:51:49",
+"location_country": "Singapore",
+"summary_polyline": "}bvyDyggzRQEAGEAQW_@o@QSy@a@c@Ya@OgBa@_AAUC_A@q@Dq@MYCUHQN_AtAg@Zi@`@yBnA}Aj@e@T[LoADgCZ]Hg@FI?QGW?QDe@r@MFEAWSGF@@D?GEc@Ac@QQAk@Bg@NK@EC",
+"average_heartrate": 136.4,
+"average_speed": 2.624,
+"source": "strava",
+"streak": 2
 }
 ]
