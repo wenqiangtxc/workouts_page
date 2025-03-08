@@ -47,6 +47,10 @@ class Generator:
         print("Access ok")
 
     def sync(self, force):
+        """
+        Sync activities means sync from strava
+        TODO, better name later
+        """
         self.check_access()
 
         print("Start syncing")
@@ -65,8 +69,13 @@ class Generator:
             if self.only_run and activity.type != "Run":
                 continue
             if IGNORE_BEFORE_SAVING:
-                activity.summary_polyline = filter_out(activity.summary_polyline)
+                if activity.map and activity.map.summary_polyline:
+                    activity.map.summary_polyline = filter_out(
+                        activity.map.summary_polyline
+                    )
             activity.source = "strava"
+            #  strava use total_elevation_gain as elevation_gain
+            activity.elevation_gain = activity.total_elevation_gain
             created = update_or_create_activity(self.session, activity)
             if created:
                 sys.stdout.write("+")
@@ -75,9 +84,11 @@ class Generator:
             sys.stdout.flush()
         self.session.commit()
 
-    def sync_from_data_dir(self, data_dir, file_suffix="gpx"):
+    def sync_from_data_dir(self, data_dir, file_suffix="gpx", activity_title_dict={}):
         loader = track_loader.TrackLoader()
-        tracks = loader.load_tracks(data_dir, file_suffix=file_suffix)
+        tracks = loader.load_tracks(
+            data_dir, file_suffix=file_suffix, activity_title_dict=activity_title_dict
+        )
         print(f"load {len(tracks)} tracks")
         if not tracks:
             print("No tracks found.")
@@ -195,6 +206,19 @@ class Generator:
         try:
             activities = self.session.query(Activity).all()
             return [str(a.run_id) for a in activities]
+        except Exception as e:
+            # pass the error
+            print(f"something wrong with {str(e)}")
+            return []
+
+    def get_old_tracks_dates(self):
+        try:
+            activities = (
+                self.session.query(Activity)
+                .order_by(Activity.start_date_local.desc())
+                .all()
+            )
+            return [str(a.start_date_local) for a in activities]
         except Exception as e:
             # pass the error
             print(f"something wrong with {str(e)}")
